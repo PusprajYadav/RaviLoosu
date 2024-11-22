@@ -1,0 +1,124 @@
+/* Font name : Roboto 
+Color code used:
+Blue : #004aad
+Orange : #ff914d */
+
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Modify the .headerh4 for scrolling effect */
+.headerh4 {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;
+    display: inline-block;
+    
+    color:  #004aad;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0; 
+}
+
+/* Header styles */
+.header {
+    
+    top: 0;
+    left: 0; 
+    right: 0;
+    background: linear-gradient(
+        to bottom right,
+        #034ae2,  
+        white,    
+        #faab02   
+    );
+    
+    
+    display: flex;
+    align-items: center; 
+    height: 30px;
+    padding: 0%;
+    border-bottom: 1px solid #faab02;
+    z-index: 1000;
+    position: static;
+}
+
+.hdr {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Styles for timer and text */
+.headertimer {
+    color: #004aad;
+    /* display: flex; */
+    font-size: smaller;
+    font-weight: 900;
+}
+
+.headerp {
+    color: green;
+    font-weight: 900;
+}
+
+.headertimerh1 {
+    font-size: 12px;
+    color: #004aad;
+    margin: 14px 0px 10px 10px;
+}
+
+.headerp {
+    font-size: 12px;
+    margin: 14px 2px 10px 50px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1025px) {
+    .header {
+        height: auto; 
+        flex-direction: column; 
+        position: static;
+    }
+
+    .header {
+    
+        
+        
+        
+        display: flex;
+        align-items: center; 
+        /* height: 50px; */
+        padding: 1%;
+        border-bottom: 1px solid #faab02;
+        z-index: 1000;
+        position: static;
+    }
+    .hdr {
+        justify-content: space-between;
+    }
+
+    .headerh4 {
+        font-size: 15px;
+        font-weight: 700;
+        /* width: 100%; */
+        overflow: hidden;
+    }
+
+    .headertimer {
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    .headertimerh1 {
+        font-size: 0.8rem;
+        margin: 0px 0px 4px 0px;
+        font-weight: 700;
+    }
+
+    .headerp {
+        font-size: 0.8rem;
+        margin: -3px 5px 5px 80px;
+        font-weight: 700;
+    }
+}

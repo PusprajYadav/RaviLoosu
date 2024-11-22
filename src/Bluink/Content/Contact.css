@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+   */
+   .serform{
+    /* border: 1px solid black; */
+    /* width:100%; */
+    padding: 0% auto;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background-color: #f0f7ff;
+   }
+  .serform-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .serform-info, .serform-contact-form {
+    width: 45%;
+  }
+  
+  .serform-info h2, .serform-contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .serform-info p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .serform-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .serform-info div img {
+    margin-right: 15px;
+  }
+  
+  .serform-info div span {
+    color: #333;
+  }
+  
+  .serform-contact-form input, .serform-contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .serform-contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .serform-contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5a3c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .serform-contact-form button:hover {
+    background-color: #e94b32;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .serform-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .serform-info, .serform-contact-form {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .serform-info h2, .serform-contact-form h2 {
+      font-size: 22px;
+    }
+  
+    .serform-info p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .serform-container {
+      padding: 20px;
+    }
+  
+    .serform-info, .serform-contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .serform-info h2, .serform-contact-form h2 {
+      font-size: 20px;
+    }
+  
+    .serform-info p {
+      font-size: 13px;
+    }
+  
+    .serform-contact-form input, .serform-contact-form textarea {
+      padding: 10px;
+    }
+  
+    .serform-contact-form button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .serform-info, .serform-contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .serform-info h2, .serform-contact-form h2 {
+      font-size: 18px;
+    }
+  
+    .serform-info p {
+      font-size: 12px;
+    }
+  
+    .serform-contact-form input, .serform-contact-form textarea {
+      padding: 8px;
+    }
+  
+    .serform-contact-form button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

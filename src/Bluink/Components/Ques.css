@@ -1,0 +1,151 @@
+/* General Styles */
+
+.sectionclass{
+width: 100%;
+ /* background-color: #f0f8ff; */
+padding: 2% 20%;
+display: flex;
+}
+
+.HaveQuestion{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+  background-color: #0d1117;
+  margin-left: 0%;
+  
+    border-radius: 45px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.haveque {
+    
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+}
+  
+  .havequeh1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 8%;
+    padding-left: 0%;
+  }
+  
+  .havequbtn button {
+    background-color: #0d1117;
+    color: white;
+    width: 200px;
+    border: none;
+    margin-left: -35%;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .havequbtn button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Section */
+  .havequesimg {
+    margin-top: 20px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .havequesimg img {
+    max-width: 100%;
+    height: 175px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Laptop View */
+  @media (min-width: 768px) {
+    section{
+      width: 100%;
+    
+    padding: 2% 0%;
+    height: 300px;
+    
+    }
+    .haveque {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+  
+    .havequesimg {
+      width: 35%;
+    }
+  
+    .havequeh1 {
+      font-size: 32px;
+      margin-left: 30%;
+    }
+  
+    .havequbtn button {
+      padding: 12px 24px;
+      font-size: 18px;
+      margin-left: 25%;
+
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .sectionclass{
+      padding: 2% 2%;
+     }
+     .section div{
+      font-size: 0.5rem;
+     }
+    .HaveQuestion{
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin: 10% 0% !important;
+
+}
+  .havequbtn button{
+width:100px;
+    margin-left: 0%;
+}
+
+    .haveque {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  
+    .havequesimg {
+      margin-top: 20px;
+    }
+  
+    .havequeh1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .havequbtn button {
+      padding: 5px 0px;
+      font-size: 16px;
+    }
+  
+    .havequesimg img {
+      max-width: 45%;
+      padding-bottom: 20px;
+    }
+  }
+  

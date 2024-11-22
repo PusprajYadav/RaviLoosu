@@ -1,0 +1,54 @@
+.output-container {
+    width: 100%;
+  }
+  
+  .output-label {
+    margin-bottom: 8px;
+    font-size: 1.25rem; /* Equivalent to lg in Chakra */
+    display: block; /* Make label a block element */
+  }
+  
+  .run-button {
+    padding: 8px 16px;
+    width:100%;
+    border:3px solid white;
+    background-color: #ff914d ; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 5px; /* Space below button */
+  }
+  
+  .run-button.loading {
+    background-color: #ff9a6d; /* Darker green when loading */
+  }
+  
+  .run-button:disabled {
+    background-color: #ffb74d; /* Light green when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+  }
+  
+  .output-box {
+    height: auto;
+    width: 100%;
+    padding: 8px;
+    color: black; /* Default text color */
+    border: 1px solid;
+    border-radius: 4px; /* Rounded corners */
+    border-color: #333; /* Default border color */
+    overflow-y: auto; /* Scroll if content overflows */
+  }
+  
+  .output-box.error {
+    color: red; /* Text color for errors */
+    border-color: red; /* Border color for errors */
+  }
+  
+  
+  @media (max-width: 768px) {
+  .run-button {
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+}}

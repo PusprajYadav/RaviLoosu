@@ -1,0 +1,254 @@
+
+
+/* Font name : Roboto 
+Color code used:
+Blue : #004aad
+Orange : #ff914d */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
+    padding: 0% 15% 0% 15%;
+    
+    /* background-color: #f0f8ff; */
+    /* background-color: #e0f0ff; */
+    /* background-color: #c0e1ff ; */
+    /* background-color: #a0c8ff; */
+    /* background-color: #80b0ff ; */
+    /* background-color: #6090ff ; */
+    /* padding: 8% 15% 10% 15%; */
+    /* border-top: 0.5px solid rgb(91, 91, 255);  */
+    background-color: #1976d236;
+    background-image: url('../../Assets/3d-grid.webp');
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+    
+    
+    
+    /* box-shadow: 0 -4px 8px rgba(121, 56, 56, 0.1);  */
+    
+}
+
+.newcomapnies{
+  margin-top: 0%;
+  margin-bottom: 1%;
+  border: 1px solid black;
+  width: 260px;
+  height: 40px;
+  border-radius: 35px;
+  padding-top: 2%;
+    color: #004aad;
+    font-weight: 600;
+    background-color: #e8e8f8;
+    /* background-color: #d0d0e8; */
+}
+.spannew{
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 5%;
+}
+.content {
+    margin-top: 1%;
+    width: 50%;
+    padding: 0px 20px 20px 20px ;
+    /* border: 1px solid red */
+}
+
+.newcomapniesh1{
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.newcomapniesp{
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 700;
+}
+
+
+/* bform data */
+.Bannerform {
+  
+    width: 40%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease; 
+    border:2px solid #ff914d ;
+    /* margin-top:5% */
+  }
+  .Bannerform label{
+  margin-top: -3%;
+  }
+  .Bannerform input{
+    padding-top: 2%;
+  }
+  .Bannerformh2 {
+    color: #ff914d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .freespan{
+    color : #004aad;
+  }
+  /* Form Input Styling */
+  .Bannerform input {
+    width: 100%;
+    padding: 5px 5px 5px 20px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid #fff8e1;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+    position: relative;
+    background-color:  #fff8e1;
+    color: #004aad;
+  }
+  
+  /* Animated Border on Focus */
+  
+  input:focus {
+  border: none;
+    outline: none;
+}
+  
+  /* Floating Placeholder Effect */
+  .Bannerform input::placeholder {
+    color: transparent; /* Hide placeholder text */
+    transition: transform 0.2s ease, font-size 0.2s ease; /* Smooth transition for label */
+  }
+  
+  .Bannerform input:focus::placeholder {
+    font-size: 0.9rem; /* Smaller font for placeholder */
+    transform: translateY(-20px); /* Move the placeholder upwards */
+  }
+  
+  .Bannerform input:focus + label, 
+  .Bannerform input:not(:placeholder-shown) + label {
+    transform: translateY(-30px); /* Floating label effect */
+    font-size: 0.8rem;
+    color: #ff914d;
+  }
+  
+  .Bannerform input:not(:placeholder-shown) + label {
+    font-size: 0.8rem;
+    /* color: #004aad;; */
+    transform: translateY(-30px);
+  }
+  
+  /* Form Labels (appear as placeholder in input fields) */
+  .Bannerform label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  
+  /* Animated Submit Button */
+  .Bannerform button {
+    width: 100%;
+    /* padding: 12px; */
+    background-color:#ff914d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border:4px solid #ff914d ;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Bannerform button:hover {
+    background-color:  #004aad;
+    color: white;
+    border:4px solid white;
+    transform: translateY(-2px); 
+  }
+
+
+  @media only screen and (min-width: 1023px) {
+    .Bannerform {
+        width: 40%;
+      }
+
+
+  }
+
+@media (max-width: 768px) {
+    .Banner {
+        flex-direction: column;
+        height: auto;
+        padding: 5% 2% 0% 2%;
+        
+    }
+
+    .Bannerform {
+        width: 45%;
+        margin-top: 0%;
+        }
+        .Bannerformh2 {
+          color: #ff914d ;
+          font-size: 1.7rem;
+          font-size: 700;
+        }
+
+        .Bannerform button {
+          width: 100%;
+          padding: 3px;
+          height: 50px;
+        }
+
+        /* form datata */
+
+    .newcomapnies{
+       margin-top: 0%;
+       width:270px;
+    height: 35px;
+    }
+
+    
+    .newcomapniesh1{
+        padding-top: 2%;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .newcomapniesp{
+        font-size: 1rem;
+    }
+    .content, .Bannerform {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content {
+      padding: 0px 20px 0px 20px
+    }
+
+    .hike {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hike div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

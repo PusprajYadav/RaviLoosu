@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .coursecon{
+    width: 100%;
+    align-items: center;
+   
+   
+   /* border: 1px solid black; */
+  }
+  
+ 
+  .dsa-course-card {
+    width: 100%;
+    max-width: 380px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* border: 1px solid red; */
+
+    margin: 0 auto;
+  }
+  
+
+  .skillbuild-title{
+    
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        color: #004aad;
+    
+
+  }
+  .dsa-course-card img {
+    width: 100%;
+    background-color: #e4942b;
+    padding: 0px;
+  }
+  
+  .dsa-content {
+    padding: 20px;
+  }
+  
+  .dsa-content h3 {
+    font-size: 20px;
+    color: #004aad;
+    margin-bottom: 10px;
+  }
+  
+  .dsa-info {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .dsa-info div {
+    flex: 1; /* Allows each div to take up 50% of the width */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+  }
+  
+  .dsa-info div i {
+    margin-right: 5px;
+    text-align: center;
+  }
+  
+  .dsa-online-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #e0f2ff;
+    color: #004aad;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  
+  .dsa-content button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#004aad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+  }
+  
+  .dsa-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dsa-content a {
+    display: block;
+    color: #004aad;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .dsa-nsdc-cert {
+    font-size: 12px;
+    font-weight: 600;
+    color: #004aad;
+
+  }
+  
+  @media (max-width: 768px) {
+   
+
+
+    .dsa-course-card {
+        /* width: 100%; */
+        max-width: 350px;
+        /* border: 2px solid red; */
+
+    }
+    .dsa-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skillbuild-title {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        font-weight: 600;
+        color: #004aad;}
+  }
+  

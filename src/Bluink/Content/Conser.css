@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+ 
+  
+  .ConSer{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .ConSerh1{
+    color: #ff914d;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+  .ConSer .service-box {
+    background: white;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 1% 1% 0% 1%;
+    height: 185px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ConSer .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ConSer .service-icon {
+    font-size: 2em;
+    color: #ff914d; /* This is your specified color */
+    margin: 0px auto;
+  }
+  
+  .ConSer .service-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* margin: 0px 0; */
+    /* padding: 0% 4% 0% 4%; */
+  }
+  
+  .ConSer .service-description {
+    font-size: 0.9em;
+    color: #004aad; /* This is your specified color */
+  }
+  
+  @media (max-width: 768px) {
+    .ConSer .service-box {
+      flex: 1 1 calc(50% - 10px);
+    }
+
+
+    .ConSerh1 {
+      
+      font-size: 1.6rem;
+   
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .ConSer .service-box {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Font name : Roboto 
+Color code used:
+Blue : #004aad
+Orange : #ff914d */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color:white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+ 
+  margin: 0;
+  
+  max-height: 65px; 
+  border-bottom-left-radius: 15px;  /* Adjust the value as needed */
+  border-bottom-right-radius: 15px; /* Adjust the value as needed */
+  background-color: #fff;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  
+
+}
+
+.navbar {
+  max-height: 65px; 
+  background-color: white;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+
+.logo img {
+  width: 180px;
+  max-height: 100px; 
+  object-fit: contain; 
+  margin-top: -9%;
+}
+
+.menu-icon {
+  display: none; /* Hidden by default */
+}
+
+.nav-elements {
+  /* No changes needed here */
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-elements ul a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #004aad;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #ff914d;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+
+.brevo-conversations-widget {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important; 
+}
+
+
+/* whats app */
+
+.whatsapp-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-widget img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-widget:hover {
+  background-color: #1ebc59;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 475px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .container {
+    
+    margin-left: -5% !important;
+    margin-right: 0% !important;
+  }
+  
+  .navbar {
+    height: 65px; 
+  }
+  .logo img {
+    width: 130px;
+    max-height: 75px;
+  }
+
+}
+
+
+
+@media (max-width: 1265px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color:  white;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
+
+.pagealu{
+  background-color: #fcfcfc;
+}
+
+@media (max-width: 1280px) {
+
+}
+
+
+@media (max-width: 1536px) {
+
+}

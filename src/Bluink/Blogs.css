@@ -1,0 +1,84 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Root colors */
+:root {
+  --blue: #004aad;
+  --orange: #ff914d;
+}
+
+/* General Font Styling */
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+.BlogsConatiner{
+    height: auto;
+}
+/* Blog Section Styling */
+.blogsection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 35px; 
+  height: auto;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h1 {
+  font-size: 1.25rem;
+  margin: 16px 0;
+  color: var(--blue);
+}
+
+.blog-card p {
+  padding: 0 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin: 16px 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.blog-card a:hover {
+  background-color: #e87c33; /* Slightly darker shade of orange */
+}
+
+
+@media screen and (max-width: 740px) {
+
+    .blog-card {
+        width: 100%;
+    }
+
+}

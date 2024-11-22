@@ -1,0 +1,49 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.certifiedsection {
+  padding: 3% 0;
+  height: auto;
+  text-align: center;
+}
+
+.verifiedh1 {
+  font-size: 36px;
+  color: #004aad; /* Blue color */
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+
+.verifiedh1 span {
+  color: #ff914d; /* Orange color */
+  text-decoration: underline;
+}
+
+.verifiedVideoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.verifiedVideo {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Limit the max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5%; /* Rounded corners */
+}
+
+@media screen and (max-width: 740px) {
+  .verifiedh1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .certifiedsection {
+    padding: 5% 0 4% 0;
+    margin: 2% 0;
+    text-align: center;
+  }
+}

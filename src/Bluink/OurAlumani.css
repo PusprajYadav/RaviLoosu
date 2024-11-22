@@ -1,0 +1,83 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+  }
+  .alum1{
+    text-align: left;
+    
+  }
+.alum4{
+    text-align: left;
+}
+
+
+.complists{
+  width: 100%;
+  
+}
+#comping{
+  width: 100%;
+  padding: 5% 20% 3% 20% ;
+  /* border: 1px solid black; */
+}
+  @media (min-width: 1024px) and (max-width: 1440px) {
+   
+    .alum1{
+        font-size: 1.7rem;
+        font-weight: 700;
+        
+      }
+    .alum4{
+       
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+
+
+
+
+    
+   
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .alum1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        
+      }
+    .alum4{
+       
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+   
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .complists{
+      width: 100%;
+      padding: 2% 2% 2% 2%;
+      
+    }
+    #comping{
+      width: 100%;
+      padding: 5% 5% 5% 5% ;
+      /* border: 1px solid red; */
+    }
+}

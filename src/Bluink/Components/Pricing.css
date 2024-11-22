@@ -1,0 +1,133 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for Course Cards */
+.pri-coursecon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0% 0% 8% 0%;
+}
+
+/* Title */
+.pri-skillbuild-title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 30px 0;
+  color: #004aad;
+}
+
+/* Individual Course Card */
+.pri-dsa-course-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Card Image */
+.pri-dsa-course-card img {
+  width: 100%;
+  background-color: #e4942b;
+}
+
+/* Card Content */
+.pri-dsa-content {
+  padding: 20px;
+}
+
+.pri-dsa-content h3 {
+  font-size: 20px;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+/* Course Details Section */
+.pri-dsa-info {
+  display: flex;
+  gap: 10px;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.pri-dsa-info div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pri-dsa-info div i {
+  margin-right: 5px;
+}
+
+/* Badge */
+.pri-dsa-online-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e0f2ff;
+  color: #004aad;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.pri-go-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #004aad;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pri-go-button:hover {
+  background-color: #0056b3;
+}
+
+/* Brochure Link */
+.pri-brochure-link {
+  display: block;
+  color: #004aad;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Certification Text */
+.pri-dsa-nsdc-cert {
+  font-size: 12px;
+  font-weight: 600;
+  color: #004aad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pri-dsa-course-card {
+    max-width: 350px;
+  }
+
+  .pri-dsa-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pri-skillbuild-title {
+    font-size: 1.8rem;
+  }
+}

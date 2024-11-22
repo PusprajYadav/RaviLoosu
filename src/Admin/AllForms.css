@@ -1,0 +1,176 @@
+/* Global styling */
+* {
+    /* color: #004aad; */
+    /* color: #ff914d; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.BodyContent {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.aluminih1 span {
+    color:#ff914d;
+    text-decoration: underline;
+
+}
+/* Form styling */
+.Alumi .forms {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.Alumi .forms h1 {
+    color: #004aad;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.inputfield {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submitbtn {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.submitbtn:hover {
+    background-color: #ff914d;
+}
+
+
+/* Table styling */
+.GetAlumaidata {
+    overflow-x: auto;
+    padding : 0% 0% 0% 5%;
+    /* margin: 0% 0% 0% 2%; */
+}
+
+.GetAlumaidata table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.GetAlumaidata th,
+.GetAlumaidata td {
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.GetAlumaidata th {
+    background-color: #004aad;
+    color: white;
+}
+
+.GetAlumaidata td {
+    background-color: #f5f5f5;
+}
+
+.GetAlumaidata img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.export-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .export-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+
+.bnu, .btnd {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bnu:hover {
+    background-color: #ff914d;
+}
+
+.btnd {
+    background-color: #d9534f;
+}
+
+.btnd:hover {
+    background-color: #c9302c;
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+    .Alumi .forms,
+    .GetAlumaidata table {
+        width: 100%;
+    }
+
+    .GetAlumaidata {
+        overflow-x: auto;
+        padding : 0% 1% 0% 1%;
+    }
+
+    .GetAlumaidata table,
+    .GetAlumaidata th,
+    .GetAlumaidata td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .submitbtn, .bnu, .btnd {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Alumi .forms {
+        padding: 15px;
+    }
+    .GetAlumaidata {
+        overflow-x: auto;
+        padding : 0% 1% 0% 1%;
+    }
+    
+    .GetAlumaidata th, .GetAlumaidata td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

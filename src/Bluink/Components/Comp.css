@@ -1,0 +1,76 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  /* color: #004aad;  */
+  /* color: #ff914d; */
+}
+
+
+.ourcompanies {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.comp-scroller {
+  overflow: hidden; 
+ 
+  margin-top: 5%;
+}
+
+
+.comph1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 0% 0% 10% 0%;
+  color: #004aad; 
+}
+.comph1 span {
+  color: #ff914d;
+  text-decoration: underline;
+
+}
+.comp-scroller__inner {
+  display: flex;
+  width: max-content; 
+  animation: scroll var(--_animation-duration, 45s) 
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+/* Right scrolling */
+.comp-scroller[data-direction="right"] {
+  --_animation-direction: forwards;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.5rem)); /* Smooth scrolling effect */
+  }
+}
+
+/* Left scrolling */
+.comp-scroller[data-direction="left"] {
+  --_animation-direction: reverse;
+}
+
+.comp-scroller[data-speed="slow"] {
+  --_animation-duration: 40s; /* Adjust scroll speed for slower scrolling */
+}
+
+/* Default speed for other scrollers */
+.comp-scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .comph1 {
+ 
+  font-size: 25px;}
+}
+
+
+.ourcompanies {
+  /* margin-top: 15%;
+  margin-bottom: 15%; */
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef3f8;
+    color: #2c3e50;
+  }
+  p{
+    text-align: justify;
+  }
+  p strong{
+    font-size: 2rem;
+  }
+  
+  .privacy-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }

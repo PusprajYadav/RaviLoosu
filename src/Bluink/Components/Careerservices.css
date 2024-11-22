@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    color: #333;
+  }
+  
+  .careerdiv{
+ 
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .careerdiv h1{text-align: center;
+   
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004aad;}
+
+.car-ser-service-content h2{
+        font-size: 1.5rem;
+    font-weight: 600;
+    color : #004aad; 
+    text-align: left;
+    }
+
+    .car-ser-service-content h3{
+        font-size: 1.5rem;
+    font-weight: 600;
+    color : #004aad;
+    text-align: left;
+    }
+ 
+    .car-ser-service-content p{
+        font-size: 0.9rem;
+        font-weight: 500;
+       
+        text-align: left;
+    }
+    
+  
+  .car-ser-service-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .car-ser-service-buttons button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .car-ser-service-buttons button:hover {
+    background-color: #e88f3d;
+  }
+  
+  .imgandcon{
+    display: flex;
+  }
+.divimage img{
+    width: 75px;
+    padding: 10px;
+}
+  .car-ser-service-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .car-ser-service-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .car-ser-service-buttons button {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .car-ser-service-content {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .careerdiv{
+        padding: 12% 0% 3% 0%
+ 
+    }
+    .car-ser-service-content {
+        max-width: 95%;}
+    .careerdiv h1 {
+        text-align: center;
+        font-size: 1.4rem;}
+    .imgandcon{
+        flex-direction: column;
+    }
+    
+    .divimage img{
+        width: 100px;
+        padding: 10px;
+        margin-left: 37%;
+    } 
+    .car-ser-service-content h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #004aad;
+        text-align: center;
+    }
+
+    .car-ser-service-content h2{
+        font-size: 1.5rem;
+    font-weight: 600;
+    color : #004aad; 
+    text-align: center;
+    }
+
+    .car-ser-service-content h3{
+        font-size: 1.5rem;
+    font-weight: 600;
+    color : #004aad;
+    text-align: center;
+    }
+    .car-ser-service-content p {
+        
+        text-align: center}
+  
+    .car-ser-service-buttons button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    .car-ser-service-content {
+      padding: 10px;
+    }
+  }
+  

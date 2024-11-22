@@ -1,0 +1,120 @@
+/* Admin Login Form CSS */
+
+/* Container styling */
+.admin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+/* Form styling */
+.admin-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo styling */
+#Adminlogo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Input group styling */
+.admin-input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.admin-input-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.admin-input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* icon  */
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%; /* Ensure the input takes full width */
+  padding-right: 30px; /* Give space on the right side for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Place the icon near the right edge */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  cursor: pointer;
+  font-size: 1.2em; /* Adjust the size of the icon */
+}
+
+
+/* Button styling */
+.admin-btn {
+  background-color: #004aad;
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-btn:hover {
+  background-color: #ff914d;
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 480px) {
+  .admin-form {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  #Adminlogo {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .admin-input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .admin-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}

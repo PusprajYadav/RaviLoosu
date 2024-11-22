@@ -1,0 +1,136 @@
+/* Style for the main container */
+.stu {
+   width :100%;
+    padding: 5% 10% 5% 10%;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    /* border: 2px solid black; */
+  }
+  
+  .stu li{
+    text-align: start;
+    padding: 0;
+  }
+
+  .points{
+    font-size: large;
+    font-weight: 700;
+  }
+  
+  /* Style for the main title */
+  #stu1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004aad;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #stu1 span{
+    color:  #ff914d;
+    text-decoration: underline;
+    
+  }
+
+  
+  /* Style for the paragraph below the title */
+  #stup {
+    font-size: 1.4rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin-left: 0%S;
+    margin-right: auto;
+  }
+
+ol, ul {
+    padding-left: 0rem;
+}
+  
+  /* Accordion Header Styling */
+  .accordion-button {
+    background-color: #cfe2ff; 
+    color: #052c65;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #0056b3; 
+    color: #fff;
+  }
+  
+  .accordion-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  /* Accordion Body Styling */
+  .accordion-body {
+    background-color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    border-radius: 5px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 15px;
+    border: none;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }
+  
+  /* Sub-lists styling */
+  ul ul {
+    margin-top: 0px;
+  }
+/*   
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #stu1 {
+      font-size: 1.5rem;
+    }
+    #stup {
+      font-size: 1.2rem;
+      color: #555;
+      text-align: start;
+    }
+  
+    #stup {
+      font-size: 1rem;
+    }
+    ol, ul {
+      padding-left: 0rem !important;
+  }
+  
+    .accordion-button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .accordion-body {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width:1022px){
+    
+  }
+  
+  @media only screen and (min-width: 1023px) {
+    .stu{
+   
+    }
+  }

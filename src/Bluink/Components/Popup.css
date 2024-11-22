@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup-content {
+  background: #fff;
+
+  /* background: linear-gradient(
+        to bottom right,
+        #034ae2,  
+        white,    
+        #faab02   
+    ); */
+  /* background: linear-gradient(135deg, #ff914d 0%, #ff6f00 100%); */
+  /* background: linear-gradient(135deg, #ff914d 0%, #fff6e5 100%); */
+  /* background: linear-gradient(135deg, #ff914d 0%, #004aad 100%); */
+
+
+
+  padding: 20px;
+  display: flex;
+  width: 40%;
+  max-width: 700px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: #004aad; /* Text color */
+  border-radius: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff914d; /* Close icon color */
+}
+
+.popup-image {
+  width: 40%;
+  /* border: 1px solid black; */
+  /* margin: 5% 1% 1% 1%; */
+  padding: 1% 1% 1% 1% ;
+}
+
+.popup-image-img {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+}
+
+.popup-text {
+  width: 60%;
+  /* border: 1px solid red; */
+  padding: 2% ;
+  
+  text-align: center;
+}
+
+.popup-text p {
+  margin: 0;
+  line-height: 1.2; 
+}
+
+.popup-heading {
+  /* margin: 0 0 10px; */
+  font-size: 1.2rem;
+  color: #004aad;
+  font-weight: 600; 
+}
+
+.popup-paragraph {
+  margin: 0;
+  color: #ff914d;
+  /* color: white; */
+  font-weight: 600px;
+  padding: 1%;
+}
+.popupmobmail{
+  font-size: 1rem;
+  font-weight: 600px;
+  color:#004aad;
+  margin: 3px;
+}
+
+@media (max-width: 768px) {
+  .popup-content {
+    flex-direction: column;
+    width: 80%;
+  }
+  
+.popup-heading {
+ 
+  font-size: 1.4rem;
+
+}
+.popup-text p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+  .popup-image {
+    width: 100%; 
+    /* margin: 0% 1% 0% 18%; */
+   
+  }
+  .popup-image-img {
+  
+      width: 100%;
+      height: 150px;
+      padding: 1% 20% 1% 20%;
+  }
+  .popup-text {
+    width: 100%; 
+    height: 225px;
+    padding: 5% 5%;
+  }
+  .popupmobmail {
+ font-size: 1.2rem;
+    font-weight: 700px;
+    color: #004aad;
+    margin: 15px;
+  }
+  
+ 
+
+
+}

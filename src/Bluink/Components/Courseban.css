@@ -1,0 +1,235 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  
+
+  .alldatasection{
+    width: 100%;
+    padding: 0% 25% 5% 25%;
+    margin: 0% 0% 0% 0%;
+    height: auto;
+  }
+  .alldata {
+    width:100%;
+    padding: 2% 5% 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    border: 6px solid white;
+    background-color:#ff914d;
+    border-radius: 35px;
+    color:  white;
+   
+  }
+
+  .coursestuh1{
+    font-size: 2.9rem;
+    font-weight: 900;
+    
+    padding: 3% 5% 2% 5%;
+    color: #004aad;
+  }
+
+  .coursestuhp{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0% 10% 2% 10%;
+  }
+  
+
+  .amount3,
+  .starcourseh3,
+  .durationtimeh3
+  {
+    font-size: 1.3rem;
+    color:white;
+    font-weight: 700;
+
+  }
+
+  .Couse{
+    color:  #ff914d;
+    text-decoration: underline;
+  }
+
+.Fees, .startdata, .duration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    border-radius: 5px;
+}
+.Amount, .starcourse, .durationtime {
+    margin-bottom: 10px;
+    color: white;
+  }
+.amount4, .starcourseh4, .durationtimeh4 {
+    font-size: 0.9rem;
+   color: white;
+   text-align: center;
+    font-weight: 500;
+    margin-top: 5%;
+  }
+
+.courestu1 {
+    width: 100%;
+    
+    background-image: url(../../Assets/Dot\ grid.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #1976d236;
+    /* background-color: #e6f0ff; */
+    /* background-color: #0d1117; */
+  }
+
+
+
+/* utton */
+.ApplyNow {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff914d ; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    position: relative;
+    overflow: hidden; 
+    margin-left: 34%;
+    width: 250px;
+    margin-top: 6%;
+  }
+  
+  .ApplyNow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter overlay */
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0); /* Shrinks initially */
+    border-radius: 50%;
+  }
+  
+  .ApplyNow:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Expands to full size on hover */
+  }
+  
+  .ApplyNow:hover {
+    background-color: #ff914d ; /* Darkens button background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+  }
+  
+  .ApplyNow:active {
+    transform: scale(0.95); /* Button shrinks slightly when clicked */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Reduces shadow on click */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    /* .Coursesection {
+      padding: 0% 5%;
+      height: auto;
+      
+    } */
+  .alldata{
+    flex-wrap: wrap; 
+    gap: 5px; 
+    margin-top: 5%; 
+    justify-content: space-around;
+    border: 6px solid white;
+  }
+    .courestu1 {
+      width: 100%;
+      padding: 2%;
+    }
+  
+    
+  }
+  
+  @media (max-width: 768px) {
+    /* .Coursesection {
+        width:100%;
+      padding: 0% 0%;
+      flex-direction: column;
+      height: auto;
+    
+    } */
+  .coursestuh1{
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+    .courestu1 {
+      width: 100%;
+      border-radius: 0px;
+    }
+    .alldatasection {
+      width: 100%;
+      padding: 0% 2% 1% 2%;
+      margin: 0% ;
+     
+    }
+   
+    .coursestuhp {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 0% 0% 0% 0%;}
+  }
+  
+  @media (max-width: 480px) {
+    /* .Coursesection {
+      padding: 0% 0%;
+    } */
+    .amount3,
+    .starcourseh3,
+    .durationtimeh3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    }
+  
+    
+    .alldata{
+    width: 100%;
+    padding: 3% 3% 0% 3%;
+    margin-top: 10%;
+    }
+  
+    .courestu1 {
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 5%;
+    }
+  
+    .courestu1 h1 {
+      font-size: 1.5rem;
+    }
+  
+    .courestu1 p {
+      font-size: 0.9rem;
+    }
+  
+    .courestu1 .Fees, .startdata, .duration {
+      font-size: 0.9rem;
+    }
+  
+    
+    .ApplyNow {
+      margin-left: 28%;
+      width: 150px;
+    }
+  }
+  

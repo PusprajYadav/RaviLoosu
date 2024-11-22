@@ -1,0 +1,132 @@
+/* Font and Background */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* color: #004aad;
+    color: #ff914d; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.formdiv{
+    width:100%;
+
+    padding: 0% 10% 1% 10% ;
+}
+
+.formsec {
+    background-color: #f0f8ff;
+    width: 100%;
+   
+   
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formsec h1 {
+    
+    color: #004aad;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+}
+
+.formsech2 {
+    color: #004aad;
+    font: 1.1rem;
+    font-weight: 700;
+}
+
+.formsec p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.formsec p span {
+    color: #ff914d;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.appliform {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.appliform input[type="text"],
+.appliform input[type="number"] {
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.appliform input:focus {
+    border-color: #004aad;
+}
+
+.appliformbtn {
+    padding: 0.8rem 1.2rem;
+    background-color: #ff914d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.appliformbtn:hover {
+    background-color: #e67e3d;
+}
+
+@media screen and (max-width: 768px) {
+    .appliform {
+        flex-direction: column;
+    }
+    .formdiv{
+        width:100%;
+        padding: 2% 2% 2% 2%;
+        /* border :1px solid black; */
+        background-color: #ffffff;
+    }
+    .formsec {
+        background-color: #f0f8ff;
+        border: 1px solid #d0e7ff;
+        width: 100%;
+       
+    }
+    .appliform input[type="text"],
+.appliform input[type="number"] {
+  
+    max-width: 320px;}
+
+    .appliform input,
+    .appliformbtn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .formsec h1 {
+       font-size: 1.4rem;
+    }
+    .formsec h2 {
+        font-size: 1rem;
+    }
+    .formsec p {
+    font-size: 1rem;
+    }
+}

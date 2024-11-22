@@ -1,0 +1,39 @@
+/* Define rotation animations */
+
+
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-counterclockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Apply the animations to the circles with different speeds and directions */
+.loader_circle_1 {
+  animation: rotate-clockwise 2s linear infinite;
+  transform-origin: center;
+}
+
+.loader_circle_2 {
+  animation: rotate-counterclockwise 3s linear infinite;
+  transform-origin: center;
+}
+
+/* Center the loader if needed */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* Makes the loader centered vertically */
+}
